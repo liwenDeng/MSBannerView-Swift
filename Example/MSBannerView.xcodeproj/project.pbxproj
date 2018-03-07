@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		BC81E1DC204FD88E0066CF0E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81E1DB204FD88E0066CF0E /* TestViewController.swift */; };
 		DFE29222F5B53E9222062480 /* Pods_MSBannerView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8940EB70C3B27E5D168BC81 /* Pods_MSBannerView_Example.framework */; };
 		EEA3E1F86C46D4F3C77B5289 /* Pods_MSBannerView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E16D6938E2D1BF54EAC624 /* Pods_MSBannerView_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -28,8 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06DD1A4B8D747CE35C1BD86F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		294F531863E381EC2D8E80AE /* MSBannerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MSBannerView.podspec; path = ../MSBannerView.podspec; sourceTree = "<group>"; };
+		06DD1A4B8D747CE35C1BD86F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		294F531863E381EC2D8E80AE /* MSBannerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSBannerView.podspec; path = ../MSBannerView.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MSBannerView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSBannerView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +46,8 @@
 		7D88EE8E55F7DBA9F4F44F7C /* Pods-MSBannerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSBannerView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSBannerView_Example/Pods-MSBannerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		85291BE4B53674D9E9E21F1D /* Pods-MSBannerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSBannerView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSBannerView_Tests/Pods-MSBannerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A20325CE8EDA936FB54584DD /* Pods-MSBannerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSBannerView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSBannerView_Tests/Pods-MSBannerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B83B01F504A1C25727A0DA19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B83B01F504A1C25727A0DA19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BC81E1DB204FD88E0066CF0E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		F8940EB70C3B27E5D168BC81 /* Pods_MSBannerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSBannerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				BC81E1DB204FD88E0066CF0E /* TestViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BC81E1DC204FD88E0066CF0E /* TestViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
