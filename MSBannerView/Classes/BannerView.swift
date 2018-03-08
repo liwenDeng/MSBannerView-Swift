@@ -37,6 +37,7 @@ public class BannerView: UIView {
     
     public var configCellBlock: ((_ cell: UICollectionViewCell, _ index: Int) -> ())?
     public var clickedCellBlock: ((_ index: Int) -> ())?
+    public var pageScrollBlock: ((_ index: Int) -> ())?
     
     deinit {
         collectionView.delegate = nil
@@ -163,7 +164,10 @@ extension BannerView: UIScrollViewDelegate {
         case CGFloat(pageCount - 1) * collectionView.frame.width:
             scrollToFirstPage()
         default:
-            break
+            if let block = pageScrollBlock, frame.size.width > 0 {
+                let pageIndex = collectionView.contentOffset.x / frame.size.width
+                block(Int(pageIndex))
+            }
         }
     }
     

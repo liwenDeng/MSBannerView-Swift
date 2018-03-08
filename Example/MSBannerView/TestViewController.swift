@@ -35,11 +35,14 @@ class TestViewController: UIViewController {
         baner = BannerView(frame: CGRect(x: 0, y: 90, width: view.bounds.width, height: 88), cellClass: TestCell.self)
         view.addSubview(baner)
         let images: [UIImage] = [#imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "4")]
-        baner.scrollByItem = true
+        baner.scrollByItem = false
         baner.autoScroll = true
         baner.setImages(images,perPageCount: 2)
         baner.configCellBlock = {(cell, index) in
             (cell as! TestCell).imageView.image = images[index]
+        }
+        baner.pageScrollBlock = {
+            print($0)
         }
         
     }
