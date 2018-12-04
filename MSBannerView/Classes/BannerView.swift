@@ -3,7 +3,7 @@
 //  BannerView
 //
 //  Created by dengliwen on 2018/3/7.
-//  Copyright © 2018年 dsjk. All rights reserved.
+//  Copyright © 2018年 dengliwen. All rights reserved.
 //
 
 import UIKit
